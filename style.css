@@ -1,0 +1,144 @@
+:root {
+    --Paleblue: hsl(225, 100%, 94%);
+    --Brightblue: hsl(245, 75%, 52%);
+    --Verypaleblue: hsl(225, 100%, 98%);
+    --Desaturatedblue: hsl(224, 23%, 55%);
+    --Darkblue: hsl(223, 47%, 23%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--Paleblue);
+    background-image: url(images/pattern-background-desktop.svg);
+    background-size: cover;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+
+.container {
+    position: absolute;
+    top: 170px;
+}
+
+img {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.hero {
+    height: 200px;
+}
+
+.text-container {
+    background: var(--Verypaleblue);
+    padding: 22px 40px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+h1 {
+    line-height: 2.5;
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 900;
+}
+
+.text-para {
+    color: hsl(224, 23%, 55%);
+    font-size: 15px;
+    text-align: center;
+    font-weight: 500;
+    font-family: 'Red Hat Display', sans-serif;
+    margin-bottom: 30px;
+}
+
+.plan {
+    background: var(--Paleblue);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 0 auto;
+    border-radius: 10px;
+    max-width: 92%;
+}
+
+.present-plan {
+    margin-right: 30px;
+}
+
+.annual-plan {
+    font-weight: 800;
+    font-size: 16px;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.annual-amount {
+    font-weight: 500;
+    color: var(--Desaturatedblue);
+}
+
+.change-plan {
+    font-size: 14px;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 800;
+}
+
+.change-plan:hover {
+    text-decoration: none;
+    color: var(--Darkblue);
+}
+
+.proceed-payment {
+    padding: 15px;
+    font-weight: 700;
+    font-size: 15px;
+    display: block;
+    text-decoration: none;
+    color: var(--Verypaleblue);
+    text-align: center;
+    margin: 25px 40px;
+    border-radius: 10px;
+    background: hsl(245, 75%, 52%);
+    box-shadow: -1px 13px 17px 0px rgb(0, 0, 0, .2);
+}
+
+.cancel {
+    color: var(--Desaturatedblue);
+    font-size: 14px;
+    font-weight: 800;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 25px;
+}
+
+@media screen and (max-width: 375px) {
+    body {
+        background-image: url(images/pattern-background-mobile.svg);
+        background-size: 100%;
+        height: 100%;
+        min-height: 100%;
+        width: 100%;
+        position: relative;
+    }
+    .container {
+        position: absolute;
+        top: 100px;
+        overflow: hidden;
+    }
+    .hero {
+        width: 100%;
+    }
+}
